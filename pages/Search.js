@@ -5,6 +5,7 @@ import { Flex, Box, Text, Icon } from "@chakra-ui/react";
 
 import { BsFilter } from "react-icons/bs";
 import SearchFilters from "./../components/SearchFilters";
+import Property from "./../components/Property";
 
 const Search = () => {
   const [searchFilters, setSearchFilters] = useState(false);
@@ -32,7 +33,10 @@ const Search = () => {
         <Icon as={BsFilter} /* paddingLeft="1" */ />
       </Flex>
       {searchFilters && <SearchFilters />}
-      <Text fontSize="2xl" p="4" fontWeight="bold"></Text>
+
+      <Text fontSize="2xl" p="4" fontWeight="bold">
+        Properties {router.query.purpose}
+      </Text>
     </Box>
   );
 };
