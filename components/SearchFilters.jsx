@@ -14,7 +14,9 @@ import { MdCacel } from "react-icons/md";
 import Image from "next/legacy/image";
 
 const SearchFilters = () => {
-  return <div>searchFilters</div>;
+  return (
+    <Flex bg="gray.100" p="4" justfiyContent="center" flexWrap="wrap"></Flex>
+  );
 };
 
 export default SearchFilters;
