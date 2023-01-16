@@ -32,7 +32,7 @@ const SearchFilters = () => {
   };
 
   return (
-    <Flex bg="gray.100" p="4" justfiyContent="center" flexWrap="wrap">
+    <Flex bg="gray.100" p="4" justfiycontent="center" flexWrap="wrap">
       {filters.map((filter) => (
         <Box key={filter.queryName}>
           <Select
